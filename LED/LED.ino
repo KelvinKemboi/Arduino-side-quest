@@ -19,25 +19,26 @@ void loop() {
     char val=Serial.read();
     int state1=digitalRead(LED_PIN1);
     int state2=digitalRead(LED_PIN2);
+    //for turning both off
     if(tolower(val)=='n'){
       digitalWrite(LED_PIN1, LOW);
       digitalWrite(LED_PIN2, LOW);
       //Serial.print("Both are off");
-    }else if(tolower(val)=='r'){
+    }else if(tolower(val)=='r'){ //turning red LED on
       if(state1==1){
         digitalWrite(LED_PIN1, LOW);
       }else{
        digitalWrite(LED_PIN1, HIGH); 
       }
       //Serial.print("LED 1 is on");
-    }else if(tolower(val)=='b'){
+    }else if(tolower(val)=='b'){ //turning Blue LED on
       if(state2==1){
         digitalWrite(LED_PIN2, LOW);
       }else{
        digitalWrite(LED_PIN2, HIGH); 
       }
       //Serial.print("LED 2 is on");
-    }else if(tolower(val)=='a'){
+    }else if(tolower(val)=='a'){ //Turhing both on
       digitalWrite(LED_PIN1, HIGH);
       digitalWrite(LED_PIN2, HIGH);
      // Serial.print("Both are on");
