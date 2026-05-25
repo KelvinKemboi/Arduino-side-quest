@@ -1,11 +1,12 @@
 const int echoPin=5;
 const int trigPin=6;
-
+const int LED=11;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
   pinMode(echoPin, INPUT);
   pinMode(trigPin, OUTPUT);
+  pinMode(LED, OUTPUT);
 }
 
 void loop() {
