@@ -26,4 +26,21 @@ void loop() {
   distance=(duration*0.0343)/2;
   Serial.println(distance);
   delay(100);
+
+  if(distance<10){
+    digitalWrite(LED, HIGH);
+    delay(50);
+    digitalWrite(LED, LOW);
+    delay(50);
+  }else if(distance<50){
+    digitalWrite(LED, HIGH);
+    delay(300);
+    digitalWrite(LED, LOW);
+    delay(300);
+  }else{
+    digitalWrite(LED, HIGH);
+    delay(500);
+    digitalWrite(LED, LOW);
+    delay(500);
+  }
 }
