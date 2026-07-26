@@ -1,9 +1,9 @@
 const int EN_A = 10; // PWM, Motor A speed
-const int IN1  = 9; // Motor A direction
-const int IN2  = 8; // Motor A direction
+const int IN1 = 9; // Motor A direction
+const int IN2 = 8; // Motor A direction
 const int EN_B = 5; // PWM, Motor B speed
-const int IN3  = 7; // Motor B direction
-const int IN4  = 6; // Motor B direction
+const int IN3 = 7; // Motor B direction
+const int IN4 = 6; // Motor B direction
 
 const int JOY_Y = A0; // forward/backward axis
 const int CENTER = 512; // joystick resting value (0–1023)
